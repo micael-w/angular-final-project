@@ -1,0 +1,24 @@
+<div *ngIf="successMsg" class="success-message p-2 bg-bg-green">{{ successMsg }}</div>
+<div *ngIf="errorMsg" class="error-message p-2 bg-bg-red">{{ errorMsg }}</div>
+
+<div class="row row-align-center">
+    <div class="form-container grid-6 grid-4-mobile if-white-32 mt-2">
+        <form class="mt-2 row">
+            <div class="grid-6 full-width">
+                <label for="title">Title</label>
+                <input [(ngModel)]="title" name="title" placeholder="Title">
+            </div>
+            <div class="grid-6 full-width pl-0">
+                <label for="author">Author</label>
+                <input [(ngModel)]="author" name="author" placeholder="Author">
+            </div>
+            <div class="grid-12 mt-2 full-width pl-0">
+                <label for="body">Post</label>
+                <textarea [(ngModel)]="body" name="body" placeholder="Post"></textarea>
+            </div>
+            <div>
+                <button (click)="createPost()">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

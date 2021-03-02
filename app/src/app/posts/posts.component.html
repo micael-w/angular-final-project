@@ -1,0 +1,31 @@
+<h3 *ngIf="loading">Loading ...</h3>
+<div *ngIf="successMsg" class="success-message p-2 bg-bg-green">{{ successMsg }}</div>
+<div *ngIf="errorMsg" class="error-message p-2 bg-bg-red">{{ errorMsg }}</div>
+
+<div *ngIf="!loading && !loading" class="posts-container row row-align-left">
+    <div *ngFor="let post of posts" class="post-list grid-6">
+        <div class="post-item grid row">
+
+            <div class="grid-12 if-white-64 p-1 mt-2">
+                <h5 class="ml-1">{{ post.title }}</h5>
+            </div>
+            <div class="row mt-1 if-white-32">
+                <!-- WRAP IN <PRE> TO PRESERVE LINE BREAKS -->
+                <pre>
+                    <p class="force-font grid-12 m-1 p-1 mr-24p"> {{ post.body }}</p>
+                </pre>
+            </div>
+            <div class="row row-align-right">
+                <p class="grid-4"><em>Posted by</em> {{ post.author }}</p>
+            </div>
+            <div class="row row-align-right">
+                <p class="grid-4"><em>at </em> {{ post.postDate | date:"MMM d, y, HH:mm"}}</p>
+            </div>
+            <div class="row-align-left row">
+                <div>
+                    <button class="btn-red mt-2" (click)="deletePost(post._id)">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
