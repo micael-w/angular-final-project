@@ -18,6 +18,8 @@ run
 
 `npm install -g express` in /api to install express
 
+`npm install -g nodemon` in /api to install nodemon
+
 `npm install -g @angular/cli` in /app to install angular command line tools
 
 run
