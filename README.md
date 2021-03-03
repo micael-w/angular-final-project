@@ -8,7 +8,7 @@ run (prefaced with `sudo` if needed)
 
 `npm install -g mongodb` in /api to install mongoDB
 
-to install MongoDB, or install it according to the instructions here depending on your operating system:
+or install it according to the instructions here depending on your operating system:
 
 https://docs.mongodb.com/manual/administration/install-community/
 
