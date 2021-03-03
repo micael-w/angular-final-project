@@ -23,12 +23,15 @@ run
 run
 
 `npm i` in /api to install dependencies
+
 `npm i` in /app to install dependencies
 
 run
 
 `nodemon npm start` in /api to start the express api
+
 `mongod` in /api to start the mongoDB server
+
 `mongo` in /api to start the mongo shell (optional)
 
 run
