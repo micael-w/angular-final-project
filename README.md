@@ -6,7 +6,7 @@ Slutprojekt i Angular; CR(U)D-app med frontend i Angular, backend med api i Expr
 
 run (prefaced with `sudo` if needed)
 
-`npm install -g mongodb` in /api to install mongoDB
+`npm install mongodb` in /api to install mongoDB
 
 or install it according to the instructions here depending on your operating system:
 
@@ -14,13 +14,13 @@ https://docs.mongodb.com/manual/administration/install-community/
 
 run
 
-`npm install -g cors` in /api to install cors
+`npm install cors` in /api to install cors
 
-`npm install -g express` in /api to install express
+`npm install express` in /api to install express
 
-`npm install -g nodemon` in /api to install nodemon
+`npm install nodemon` in /api to install nodemon
 
-`npm install -g @angular/cli` in /app to install angular command line tools
+`npm install @angular/cli` in /app to install angular command line tools
 
 run
 
